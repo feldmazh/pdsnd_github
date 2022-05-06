@@ -2,10 +2,12 @@ import time
 import pandas as pd
 import numpy as np
 
+# Establish a map for the city data files
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
+# Establish a map for the days of the week to use with the user input
 days = {'su' : 'sunday', 'm': 'monday', 'tu' : 'tuesday', 'w' : 'wednesday',
         'th' : 'thursday', 'f' : 'friday', 'sa' : 'saturday'}
 
