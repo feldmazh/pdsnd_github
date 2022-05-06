@@ -54,7 +54,7 @@ def get_filters():
             print('\nWe will make sure to filter by day!\n')
             while True:
                 try:
-                    day = days[input('\nWhich day? Please type a day M, Tu, W, Th, F, Sa, Su.\n').lower()]
+                    day = days[input('\nWhich day? Please type a day with the following abbreviations M, Tu, W, Th, F, Sa, Su.\n').lower()]
                     break
                 except:
                     print('\nPlease enter the day again.\n')
