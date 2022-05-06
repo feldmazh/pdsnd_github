@@ -231,12 +231,12 @@ def raw_data(df):
     """Displays 5 rows of data until user wants to stop""" 
     
     data_counter = 0
-    raw = input('\nWould you like to view individual trip data? Type yes or no.\n').lower()
+    raw = input('\nWould you like to view raw individual trip data? Type yes or no.\n').lower()
          
     if raw == 'yes':
         print(df.head())
         while True:
-            again = input('\nWould you like to view more individual trip data? Type yes or no.\n').lower()
+            again = input('\nWould you like to view more raw individual trip data? Type yes or no.\n').lower()
             if again == 'yes':
                 data_counter += 5
                 print(df[data_counter:data_counter+5])
