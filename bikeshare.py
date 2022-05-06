@@ -56,7 +56,7 @@ def get_filters():
             print('\nWe will make sure to filter by day!\n')
             while True:
                 try:
-                    day = days[input('\nWhich day? Please type a day M, Tu, W, Th, F, Sa, Su.\n').lower()]
+                    day = days[input('\nWhich day? Please type a day with the following abbreviations M, Tu, W, Th, F, Sa, Su.\n').lower()]
                     break
                 except:
                     print('\nPlease enter the day again.\n')
@@ -233,12 +233,12 @@ def raw_data(df):
     """Displays 5 rows of data until user wants to stop""" 
     
     data_counter = 0
-    raw = input('\nWould you like to view individual trip data? Type yes or no.\n').lower()
+    raw = input('\nWould you like to view raw individual trip data? Type yes or no.\n').lower()
          
     if raw == 'yes':
         print(df.head())
         while True:
-            again = input('\nWould you like to view more individual trip data? Type yes or no.\n').lower()
+            again = input('\nWould you like to view more raw individual trip data? Type yes or no.\n').lower()
             if again == 'yes':
                 data_counter += 5
                 print(df[data_counter:data_counter+5])
