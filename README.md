@@ -7,7 +7,7 @@
 Bikeshare
 
 ### Description
-This project analyzes bikeshare data from Chicago, New York City, and Washington, and works with the user interactively to provide summarizing statistics. 
+This project analyzes bikeshare data from Chicago, New York City, and Washington, and works with the user interactively to provide summarizing statistics. The user can view daily, monthly, or cumulative statistics.
 
 ### Files used
 bikeshare.py
